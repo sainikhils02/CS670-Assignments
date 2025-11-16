@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "queries_per_run": 8,
+    "repetitions": 2,
+    "dry_run": false
+  },
+  "vary_items": [
+    {
+      "users": 16,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 190.3863335490023,
+      "per_query_ms": 23798.291693625288,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 32,
+      "queries": 8,
+      "avg_runtime_sec": 189.46642963200065,
+      "per_query_ms": 23683.30370400008,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 64,
+      "queries": 8,
+      "avg_runtime_sec": 186.20538118100012,
+      "per_query_ms": 23275.672647625015,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 186.49953485849983,
+      "per_query_ms": 23312.44185731248,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 256,
+      "queries": 8,
+      "avg_runtime_sec": 186.29328221149626,
+      "per_query_ms": 23286.660276437033,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 186.23004364200096,
+      "per_query_ms": 23278.75545525012,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 128,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 186.2162962805014,
+      "per_query_ms": 23277.037035062676,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 32,
+      "queries": 8,
+      "avg_runtime_sec": 186.38030222450107,
+      "per_query_ms": 23297.537778062633,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 64,
+      "queries": 8,
+      "avg_runtime_sec": 186.38320993649904,
+      "per_query_ms": 23297.90124206238,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 186.12392167000144,
+      "per_query_ms": 23265.49020875018,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 256,
+      "queries": 8,
+      "avg_runtime_sec": 186.25595239850009,
+      "per_query_ms": 23281.99404981251,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 186.16586481799823,
+      "per_query_ms": 23270.73310224978,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 1024,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 186.1746867020047,
+      "per_query_ms": 23271.835837750587,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 32,
+      "queries": 8,
+      "avg_runtime_sec": 186.37860337950042,
+      "per_query_ms": 23297.325422437552,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 64,
+      "queries": 8,
+      "avg_runtime_sec": 185.81398395200085,
+      "per_query_ms": 23226.747994000107,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 185.8336131524993,
+      "per_query_ms": 23229.201644062414,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 256,
+      "queries": 8,
+      "avg_runtime_sec": 187.68780980349766,
+      "per_query_ms": 23460.976225437207,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 189.36405627000204,
+      "per_query_ms": 23670.507033750255,
+      "sweep_label": "large users (1024)"
+    }
+  ],
+  "vary_users": [
+    {
+      "users": 16,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 189.35141745200235,
+      "per_query_ms": 23668.927181500294,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 32,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 189.31308290949892,
+      "per_query_ms": 23664.135363687365,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 64,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 189.29986898849893,
+      "per_query_ms": 23662.483623562366,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 128,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 189.37412955299806,
+      "per_query_ms": 23671.766194124757,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 256,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 189.27881730149966,
+      "per_query_ms": 23659.852162687457,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 1024,
+      "items": 16,
+      "queries": 8,
+      "avg_runtime_sec": 189.4152769220018,
+      "per_query_ms": 23676.909615250224,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 16,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 189.33147542249935,
+      "per_query_ms": 23666.43442781242,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 32,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 188.27749520199723,
+      "per_query_ms": 23534.686900249653,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 64,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 189.2731758810005,
+      "per_query_ms": 23659.146985125062,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 128,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 189.33495865549776,
+      "per_query_ms": 23666.86983193722,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 256,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 189.32221152249986,
+      "per_query_ms": 23665.276440312482,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 1024,
+      "items": 128,
+      "queries": 8,
+      "avg_runtime_sec": 189.3154014080028,
+      "per_query_ms": 23664.42517600035,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 16,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 189.30396562549868,
+      "per_query_ms": 23662.995703187335,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 32,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 189.16282266950293,
+      "per_query_ms": 23645.352833687866,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 64,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 189.36421406799855,
+      "per_query_ms": 23670.52675849982,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 128,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 188.27868315649903,
+      "per_query_ms": 23534.83539456238,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 256,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 189.1776569499998,
+      "per_query_ms": 23647.207118749975,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 1024,
+      "queries": 8,
+      "avg_runtime_sec": 189.26898099699974,
+      "per_query_ms": 23658.622624624968,
+      "sweep_label": "large items (1024)"
+    }
+  ]
+}

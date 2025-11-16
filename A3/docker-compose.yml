@@ -1,0 +1,54 @@
+services:
+  gen:
+    build: .
+    container_name: a3_gen
+    command: ["./gen_queries", "1024", "256", "16"]
+    volumes:
+      - ./data:/app/data
+    networks:
+      - mpc_net
+
+  p2:
+    build: .
+    container_name: a3_p2
+    environment:
+      - ROLE=p2
+    command: ["./p2"]
+    depends_on:
+      gen:
+        condition: service_completed_successfully
+    volumes:
+      - ./data:/app/data
+    networks:
+      - mpc_net
+
+  p1:
+    build: .
+    container_name: a3_p1
+    environment:
+      - ROLE=p1
+    command: ["./p1"]
+    depends_on:
+      - p2
+    volumes:
+      - ./data:/app/data
+    networks:
+      - mpc_net
+
+  p0:
+    build: .
+    container_name: a3_p0
+    environment:
+      - ROLE=p0
+    command: ["./p0"]
+    depends_on:
+      - p2
+      - p1
+    volumes:
+      - ./data:/app/data
+    networks:
+      - mpc_net
+
+networks:
+  mpc_net:
+    driver: bridge

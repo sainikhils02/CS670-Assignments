@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "queries_per_run": 2,
+    "features": 3,
+    "repetitions": 1,
+    "dry_run": false
+  },
+  "vary_items": [
+    {
+      "users": 16,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.032636614996591,
+      "per_query_ms": 3516.3183074982953,
+      "per_user_update_ms": 3516.3183074982953,
+      "per_item_update_ms": 3516.3183074982953,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 32,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.047535145997244,
+      "per_query_ms": 3523.767572998622,
+      "per_user_update_ms": 3523.767572998622,
+      "per_item_update_ms": 3523.767572998622,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 64,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.935718568005541,
+      "per_query_ms": 3467.8592840027704,
+      "per_user_update_ms": 3467.8592840027704,
+      "per_item_update_ms": 3467.8592840027704,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.062749431999691,
+      "per_query_ms": 3531.3747159998456,
+      "per_user_update_ms": 3531.3747159998456,
+      "per_item_update_ms": 3531.3747159998456,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 256,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.147690867001074,
+      "per_query_ms": 3573.845433500537,
+      "per_user_update_ms": 3573.845433500537,
+      "per_item_update_ms": 3573.845433500537,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 16,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.954056032998778,
+      "per_query_ms": 3477.028016499389,
+      "per_user_update_ms": 3477.028016499389,
+      "per_item_update_ms": 3477.028016499389,
+      "sweep_label": "small users (16)"
+    },
+    {
+      "users": 128,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.002407018997474,
+      "per_query_ms": 3501.203509498737,
+      "per_user_update_ms": 3501.203509498737,
+      "per_item_update_ms": 3501.203509498737,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 32,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.940951788004895,
+      "per_query_ms": 3470.4758940024476,
+      "per_user_update_ms": 3470.4758940024476,
+      "per_item_update_ms": 3470.4758940024476,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 64,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.788923068997974,
+      "per_query_ms": 3394.461534498987,
+      "per_user_update_ms": 3394.461534498987,
+      "per_item_update_ms": 3394.461534498987,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.132605760998558,
+      "per_query_ms": 3566.302880499279,
+      "per_user_update_ms": 3566.302880499279,
+      "per_item_update_ms": 3566.302880499279,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 256,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.931728345996817,
+      "per_query_ms": 3465.8641729984083,
+      "per_user_update_ms": 3465.8641729984083,
+      "per_item_update_ms": 3465.8641729984083,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 128,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.878804751999269,
+      "per_query_ms": 3439.4023759996344,
+      "per_user_update_ms": 3439.4023759996344,
+      "per_item_update_ms": 3439.4023759996344,
+      "sweep_label": "moderate users (128)"
+    },
+    {
+      "users": 1024,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.881869798002299,
+      "per_query_ms": 3440.9348990011495,
+      "per_user_update_ms": 3440.9348990011495,
+      "per_item_update_ms": 3440.9348990011495,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 32,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.967322795004293,
+      "per_query_ms": 3483.6613975021464,
+      "per_user_update_ms": 3483.6613975021464,
+      "per_item_update_ms": 3483.6613975021464,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 64,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.9164050679974025,
+      "per_query_ms": 3458.2025339987013,
+      "per_user_update_ms": 3458.2025339987013,
+      "per_item_update_ms": 3458.2025339987013,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.877224354997452,
+      "per_query_ms": 3438.612177498726,
+      "per_user_update_ms": 3438.612177498726,
+      "per_item_update_ms": 3438.612177498726,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 256,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.056954305000545,
+      "per_query_ms": 3528.4771525002725,
+      "per_user_update_ms": 3528.4771525002725,
+      "per_item_update_ms": 3528.4771525002725,
+      "sweep_label": "large users (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.018809793997207,
+      "per_query_ms": 3509.4048969986034,
+      "per_user_update_ms": 3509.4048969986034,
+      "per_item_update_ms": 3509.4048969986034,
+      "sweep_label": "large users (1024)"
+    }
+  ],
+  "vary_users": [
+    {
+      "users": 16,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.874007451995567,
+      "per_query_ms": 3437.0037259977835,
+      "per_user_update_ms": 3437.0037259977835,
+      "per_item_update_ms": 3437.0037259977835,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 32,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.095043622000958,
+      "per_query_ms": 3547.521811000479,
+      "per_user_update_ms": 3547.521811000479,
+      "per_item_update_ms": 3547.521811000479,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 64,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.939619873999618,
+      "per_query_ms": 3469.809936999809,
+      "per_user_update_ms": 3469.809936999809,
+      "per_item_update_ms": 3469.809936999809,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 128,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.738044464997074,
+      "per_query_ms": 3369.022232498537,
+      "per_user_update_ms": 3369.022232498537,
+      "per_item_update_ms": 3369.022232498537,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 256,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.944656483006838,
+      "per_query_ms": 3472.328241503419,
+      "per_user_update_ms": 3472.328241503419,
+      "per_item_update_ms": 3472.328241503419,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 1024,
+      "items": 16,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.911643952000304,
+      "per_query_ms": 3455.821976000152,
+      "per_user_update_ms": 3455.821976000152,
+      "per_item_update_ms": 3455.821976000152,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 16,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.899636179005029,
+      "per_query_ms": 3449.8180895025143,
+      "per_user_update_ms": 3449.8180895025143,
+      "per_item_update_ms": 3449.8180895025143,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 32,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.932961826998508,
+      "per_query_ms": 3466.480913499254,
+      "per_user_update_ms": 3466.480913499254,
+      "per_item_update_ms": 3466.480913499254,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 64,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.842867517996638,
+      "per_query_ms": 3421.433758998319,
+      "per_user_update_ms": 3421.433758998319,
+      "per_item_update_ms": 3421.433758998319,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 128,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.754207332996884,
+      "per_query_ms": 3377.103666498442,
+      "per_user_update_ms": 3377.103666498442,
+      "per_item_update_ms": 3377.103666498442,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 256,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.760387690002972,
+      "per_query_ms": 3380.193845001486,
+      "per_user_update_ms": 3380.193845001486,
+      "per_item_update_ms": 3380.193845001486,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 1024,
+      "items": 128,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.769051965995459,
+      "per_query_ms": 3384.5259829977294,
+      "per_user_update_ms": 3384.5259829977294,
+      "per_item_update_ms": 3384.5259829977294,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 16,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.961283741999068,
+      "per_query_ms": 3480.641870999534,
+      "per_user_update_ms": 3480.641870999534,
+      "per_item_update_ms": 3480.641870999534,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 32,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.861588056002802,
+      "per_query_ms": 3430.794028001401,
+      "per_user_update_ms": 3430.794028001401,
+      "per_item_update_ms": 3430.794028001401,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 64,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.954915950002032,
+      "per_query_ms": 3477.457975001016,
+      "per_user_update_ms": 3477.457975001016,
+      "per_item_update_ms": 3477.457975001016,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 128,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.999192780000158,
+      "per_query_ms": 3499.596390000079,
+      "per_user_update_ms": 3499.596390000079,
+      "per_item_update_ms": 3499.596390000079,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 256,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 6.986217837998993,
+      "per_query_ms": 3493.1089189994964,
+      "per_user_update_ms": 3493.1089189994964,
+      "per_item_update_ms": 3493.1089189994964,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 1024,
+      "features": 3,
+      "queries": 2,
+      "avg_runtime_sec": 7.04746712600172,
+      "per_query_ms": 3523.73356300086,
+      "per_user_update_ms": 3523.73356300086,
+      "per_item_update_ms": 3523.73356300086,
+      "sweep_label": "large items (1024)"
+    }
+  ]
+}
