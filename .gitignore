@@ -25,6 +25,7 @@ __pycache__/
 *.pyo
 *.pyd
 venv/
+venev/
 env/
 ENV/
 
@@ -62,4 +63,4 @@ docker-compose.override.yml
 # data/
 
 # Add any project-specific patterns below
-.a3/
+A3/.a3
