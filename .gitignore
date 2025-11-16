@@ -1,0 +1,65 @@
+# .gitignore - repository-wide ignore rules
+# Edit this file to add or remove patterns for files you don't want tracked by git.
+
+# Build / compiled output
+build/
+bin/
+dist/
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.out
+
+# CMake
+/CMakeFiles/
+/CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+ENV/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.swp
+*.sln
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Environment files
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# Ignore local build data (uncomment if you want to ignore)
+# data/
+
+# Add any project-specific patterns below
+.a3/
