@@ -33,10 +33,10 @@ from typing import Dict, Iterable, List
 import matplotlib.pyplot as plt
 
 A3_ROOT = Path(__file__).resolve().parent
-DEFAULT_NUM_QUERIES = 8
+DEFAULT_NUM_QUERIES = 1
 DEFAULT_REPETITIONS = 2
-RESULTS_JSON = A3_ROOT / "benchmark_results.json"
-PLOTS_DIR = A3_ROOT / "plots"
+RESULTS_JSON = A3_ROOT / "benchmark_results_2.json"
+PLOTS_DIR = A3_ROOT / "plots2"
 
 ITEM_SWEEPS = [
     {"label": "small users (16)", "users": 16, "items": [16, 32, 64, 128, 256, 1024]},
@@ -86,6 +86,7 @@ def regenerate_data(users: int, items: int, queries: int, *, dry_run: bool) -> N
 def run_protocol(*, dry_run: bool) -> float:
     cmd = COMPOSE_BASE + [
         "up",
+        "--no-deps",
         "--force-recreate",
         "--abort-on-container-exit",
         "p2",

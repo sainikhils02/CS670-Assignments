@@ -13,9 +13,6 @@ services:
     container_name: p2
     environment:
       - ROLE=p2
-    depends_on:
-      gen:
-        condition: service_completed_successfully
     volumes:
       - ./data:/app/data
     networks:

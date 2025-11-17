@@ -1,0 +1,520 @@
+{
+  "metadata": {
+    "queries_per_run": 1,
+    "features": 1,
+    "repetitions": 1,
+    "dry_run": false
+  },
+  "vary_users": [
+    {
+      "users": 16,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.179419128999143,
+      "per_query_ms": 5179.419128999143,
+      "per_user_update_ms": 5179.419128999143,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 32,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.961433486001624,
+      "per_query_ms": 4961.433486001624,
+      "per_user_update_ms": 4961.433486001624,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 64,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.945776972999738,
+      "per_query_ms": 4945.776972999738,
+      "per_user_update_ms": 4945.776972999738,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 128,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.063212999000825,
+      "per_query_ms": 5063.212999000825,
+      "per_user_update_ms": 5063.212999000825,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 256,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.915379994999967,
+      "per_query_ms": 4915.379994999967,
+      "per_user_update_ms": 4915.379994999967,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 1024,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.771471306001331,
+      "per_query_ms": 4771.471306001331,
+      "per_user_update_ms": 4771.471306001331,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 2048,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.886835093999252,
+      "per_query_ms": 4886.835093999252,
+      "per_user_update_ms": 4886.835093999252,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 4096,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.834958717998234,
+      "per_query_ms": 4834.958717998234,
+      "per_user_update_ms": 4834.958717998234,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 8192,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.894638526999188,
+      "per_query_ms": 4894.638526999188,
+      "per_user_update_ms": 4894.638526999188,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 16384,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.963362806000077,
+      "per_query_ms": 4963.362806000077,
+      "per_user_update_ms": 4963.362806000077,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 32768,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.8379274220023945,
+      "per_query_ms": 4837.927422002394,
+      "per_user_update_ms": 4837.927422002394,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 65536,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.01581604200328,
+      "per_query_ms": 5015.81604200328,
+      "per_user_update_ms": 5015.81604200328,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 131072,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.01283734900062,
+      "per_query_ms": 5012.83734900062,
+      "per_user_update_ms": 5012.83734900062,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 262144,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.204368750000867,
+      "per_query_ms": 5204.368750000867,
+      "per_user_update_ms": 5204.368750000867,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 524288,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.3198206719971495,
+      "per_query_ms": 5319.8206719971495,
+      "per_user_update_ms": 5319.8206719971495,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 1048576,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.940746678999858,
+      "per_query_ms": 5940.746678999858,
+      "per_user_update_ms": 5940.746678999858,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 2097152,
+      "items": 16,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 6.931331138999667,
+      "per_query_ms": 6931.331138999667,
+      "per_user_update_ms": 6931.331138999667,
+      "sweep_label": "small items (16)"
+    },
+    {
+      "users": 16,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.833987900001375,
+      "per_query_ms": 4833.987900001375,
+      "per_user_update_ms": 4833.987900001375,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 32,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.846405152999068,
+      "per_query_ms": 4846.405152999068,
+      "per_user_update_ms": 4846.405152999068,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 64,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.915624977002153,
+      "per_query_ms": 4915.624977002153,
+      "per_user_update_ms": 4915.624977002153,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 128,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.837317903999065,
+      "per_query_ms": 4837.317903999065,
+      "per_user_update_ms": 4837.317903999065,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 256,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.822881464002421,
+      "per_query_ms": 4822.881464002421,
+      "per_user_update_ms": 4822.881464002421,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 1024,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.821780343998398,
+      "per_query_ms": 4821.780343998398,
+      "per_user_update_ms": 4821.780343998398,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 2048,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.7736828480010445,
+      "per_query_ms": 4773.6828480010445,
+      "per_user_update_ms": 4773.6828480010445,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 4096,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.827791690997401,
+      "per_query_ms": 4827.791690997401,
+      "per_user_update_ms": 4827.791690997401,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 8192,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.863302624999051,
+      "per_query_ms": 4863.302624999051,
+      "per_user_update_ms": 4863.302624999051,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 16384,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.832565291002538,
+      "per_query_ms": 4832.565291002538,
+      "per_user_update_ms": 4832.565291002538,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 32768,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.961780522000481,
+      "per_query_ms": 4961.780522000481,
+      "per_user_update_ms": 4961.780522000481,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 65536,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.93477954500122,
+      "per_query_ms": 4934.77954500122,
+      "per_user_update_ms": 4934.77954500122,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 131072,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.102118848000828,
+      "per_query_ms": 5102.118848000828,
+      "per_user_update_ms": 5102.118848000828,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 262144,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.077406585998688,
+      "per_query_ms": 5077.406585998688,
+      "per_user_update_ms": 5077.406585998688,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 524288,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.351965140001994,
+      "per_query_ms": 5351.965140001994,
+      "per_user_update_ms": 5351.965140001994,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 1048576,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.715509409998049,
+      "per_query_ms": 5715.509409998049,
+      "per_user_update_ms": 5715.509409998049,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 2097152,
+      "items": 128,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 6.795643192002899,
+      "per_query_ms": 6795.643192002899,
+      "per_user_update_ms": 6795.643192002899,
+      "sweep_label": "moderate items (128)"
+    },
+    {
+      "users": 16,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.096148208998784,
+      "per_query_ms": 5096.148208998784,
+      "per_user_update_ms": 5096.148208998784,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 32,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.952969247999135,
+      "per_query_ms": 4952.969247999135,
+      "per_user_update_ms": 4952.969247999135,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 64,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.912932161001663,
+      "per_query_ms": 4912.932161001663,
+      "per_user_update_ms": 4912.932161001663,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 128,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.864139276996866,
+      "per_query_ms": 4864.139276996866,
+      "per_user_update_ms": 4864.139276996866,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 256,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.896246275999147,
+      "per_query_ms": 4896.246275999147,
+      "per_user_update_ms": 4896.246275999147,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 1024,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.7299903919993085,
+      "per_query_ms": 4729.9903919993085,
+      "per_user_update_ms": 4729.9903919993085,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 2048,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.832567358000233,
+      "per_query_ms": 4832.567358000233,
+      "per_user_update_ms": 4832.567358000233,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 4096,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.964981852001074,
+      "per_query_ms": 4964.981852001074,
+      "per_user_update_ms": 4964.981852001074,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 8192,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.834647165000206,
+      "per_query_ms": 4834.647165000206,
+      "per_user_update_ms": 4834.647165000206,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 16384,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.724244916000316,
+      "per_query_ms": 4724.244916000316,
+      "per_user_update_ms": 4724.244916000316,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 32768,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.912137147002795,
+      "per_query_ms": 4912.137147002795,
+      "per_user_update_ms": 4912.137147002795,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 65536,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 4.798030614998424,
+      "per_query_ms": 4798.030614998424,
+      "per_user_update_ms": 4798.030614998424,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 131072,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.085483999002463,
+      "per_query_ms": 5085.483999002463,
+      "per_user_update_ms": 5085.483999002463,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 262144,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.158313637999527,
+      "per_query_ms": 5158.313637999527,
+      "per_user_update_ms": 5158.313637999527,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 524288,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.42730273199777,
+      "per_query_ms": 5427.30273199777,
+      "per_user_update_ms": 5427.30273199777,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 1048576,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 5.813768721000088,
+      "per_query_ms": 5813.768721000088,
+      "per_user_update_ms": 5813.768721000088,
+      "sweep_label": "large items (1024)"
+    },
+    {
+      "users": 2097152,
+      "items": 1024,
+      "features": 1,
+      "queries": 1,
+      "avg_runtime_sec": 6.729634287999943,
+      "per_query_ms": 6729.634287999943,
+      "per_user_update_ms": 6729.634287999943,
+      "sweep_label": "large items (1024)"
+    }
+  ]
+}

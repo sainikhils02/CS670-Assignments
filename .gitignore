@@ -64,3 +64,4 @@ docker-compose.override.yml
 
 # Add any project-specific patterns below
 A3/.a3
+.a3

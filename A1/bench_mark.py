@@ -33,22 +33,22 @@ from typing import Dict, Iterable, List
 import matplotlib.pyplot as plt
 
 A1_ROOT = Path(__file__).resolve().parent
-DEFAULT_NUM_QUERIES = 8
-DEFAULT_NUM_FEATURES = 4
-DEFAULT_REPETITIONS = 2
-RESULTS_JSON = A1_ROOT / "benchmark_results.json"
+DEFAULT_NUM_QUERIES = 1
+DEFAULT_NUM_FEATURES = 1
+DEFAULT_REPETITIONS = 1
+RESULTS_JSON = A1_ROOT / "benchmark_results_A1.json"
 PLOTS_DIR = A1_ROOT / "plots"
 
 ITEM_SWEEPS = [
-    {"label": "small users (16)", "users": 16, "items": [16, 32, 64, 128, 256, 1024]},
-    {"label": "moderate users (128)", "users": 128, "items": [16, 32, 64, 128, 256, 1024]},
-    {"label": "large users (1024)", "users": 1024, "items": [16, 32, 64, 128, 256, 1024]},
+    {"label": "small users (16)", "users": 16, "items": [16, 32, 64, 128, 256, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]},
+    {"label": "moderate users (128)", "users": 128, "items": [16, 32, 64, 128, 256, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]},
+    {"label": "large users (1024)", "users": 1024, "items": [16, 32, 64, 128, 256, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144]},
 ]
 
 USER_SWEEPS = [
-    {"label": "small items (16)", "items": 16, "users": [16, 32, 64, 128, 256, 1024]},
-    {"label": "moderate items (128)", "items":128, "users": [16, 32, 64, 128, 256, 1024]},
-    {"label": "large items (1024)", "items": 1024, "users": [16, 32, 64, 128, 256, 1024]},
+    {"label": "small items (16)", "items": 16, "users": [16, 32, 64, 128, 256, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152]},
+    {"label": "moderate items (128)", "items":128, "users": [16, 32, 64, 128, 256, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152]},
+    {"label": "large items (1024)", "items": 1024, "users": [16, 32, 64, 128, 256, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152]},
 ]
 
 COMPOSE_BASE = ["docker", "compose"]
@@ -65,7 +65,7 @@ def run_command(args: List[str], *, dry_run: bool, check: bool = True) -> None:
 
 
 def compose_down(*, dry_run: bool) -> None:
-    run_command(COMPOSE_BASE + ["down"], dry_run=dry_run, check=False)
+    run_command(COMPOSE_BASE + ["down", "--remove-orphans"], dry_run=dry_run, check=False)
 
 
 def regenerate_data(users: int, items: int, features: int, queries: int, *, dry_run: bool) -> None:
@@ -90,6 +90,7 @@ def run_protocol(*, dry_run: bool) -> float:
         "up",
         "--force-recreate",
         "--abort-on-container-exit",
+        "--remove-orphans",
         "p2",
         "p1",
         "p0",
@@ -126,7 +127,6 @@ def benchmark_point(
         "avg_runtime_sec": avg_runtime,
         "per_query_ms": per_query * 1000.0,
         "per_user_update_ms": per_query * 1000.0,
-        "per_item_update_ms": per_query * 1000.0,
     }
 
 
@@ -265,7 +265,7 @@ def main() -> None:
             "repetitions": args.repetitions,
             "dry_run": args.dry_run,
         },
-        "vary_items": items_records,
+        # "vary_items": items_records,
         "vary_users": users_records,
     }
     RESULTS_JSON.write_text(json.dumps(all_results, indent=2))
@@ -280,17 +280,7 @@ def main() -> None:
             ylabel="Time per user update (ms)",
             title="User profile update latency vs items",
             value_key="per_user_update_ms",
-            output_name="time_vs_items_user.png",
-        )
-        plot_results(
-            items_records,
-            x_key="items",
-            group_key="sweep_label",
-            xlabel="Number of items",
-            ylabel="Time per item update (ms)",
-            title="Item profile update latency vs items",
-            value_key="per_item_update_ms",
-            output_name="time_vs_items_item.png",
+            output_name="time_vs_items_A1.png",
         )
         plot_results(
             users_records,
@@ -300,17 +290,7 @@ def main() -> None:
             ylabel="Time per user update (ms)",
             title="User profile update latency vs users",
             value_key="per_user_update_ms",
-            output_name="time_vs_users_user.png",
-        )
-        plot_results(
-            users_records,
-            x_key="users",
-            group_key="sweep_label",
-            xlabel="Number of users",
-            ylabel="Time per item update (ms)",
-            title="Item profile update latency vs users",
-            value_key="per_item_update_ms",
-            output_name="time_vs_users_item.png",
+            output_name="time_vs_users_A1.png",
         )
 
 
